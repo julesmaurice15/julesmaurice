@@ -1,0 +1,178 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #0B488F;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+#hero {
+    background-color: #E21B4D;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Positionner le logo en haut à gauche */
+.logo-container {
+    position: absolute;
+    top: 20px; /* Ajuste la distance du haut de la page */
+    left: 10px; /* Ajuste la distance du bord gauche */
+}
+
+.logo {
+    width: 200px; /* Ajuste la taille du logo (modifiez selon vos préférences) */
+    height: auto; /* Garder les proportions du logo */
+}
+
+
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 0px;
+    word-spacing: 0.05em;
+}
+
+/* Main Content Section */
+.content {
+    padding: 60px 0;
+}
+
+/* Surprise Sections */
+.surprise {
+    background-color: #0B488F;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.surprise h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.surprise-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Alignement en haut */
+    gap: 20px;
+}
+
+.surprise .text {
+    flex: 1; /* Prend 50% de l'espace disponible */
+    max-width: 50%; /* Limite la largeur */
+    text-align: justify; /* Justifie le texte */
+    font-size: 1.2em;
+}
+
+.video-container {
+    flex: 1; /* Prend 50% de l'espace disponible */
+    max-width: 50%; /* Limite la largeur */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Boutons alignés sous la vidéo */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrage horizontal */
+    gap: 10px; /* Espacement entre les boutons */
+    margin-top: 20px; /* Espacement avec la vidéo */
+}
+
+.btn-toggle {
+    background-color: #ffcc00;
+    color: #001f36;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-toggle:hover {
+    background-color: #e6b800;
+}
+
+/* Texte masqué */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #001f36;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Conteneur de l'image */
+.image-container {
+    flex: 1; /* Prend 50% de l'espace disponible */
+    max-width: 50%; /* Limite la largeur */
+    text-align: center; /* Centrage de l'image */
+}
+
+.image-container img {
+    width: 100%; /* L'image occupe toute la largeur du conteneur */
+    max-width: 400px; /* Limite la taille maximale de l'image */
+    border-radius: 10px; /* Ajout d'un léger arrondi */
+}
+
+/* Boutons alignés sous l'image */
+.image-container .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrage horizontal */
+    gap: 10px; /* Espacement entre les boutons */
+    margin-top: 20px; /* Espacement avec l'image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .surprise-description {
+        flex-direction: column; /* Empile le texte et la vidéo */
+    }
+
+    .video-container {
+        max-width: 100%; /* Prend toute la largeur */
+    }
+
+    .text {
+        max-width: 100%; /* Prend toute la largeur */
+    }
+}
+
+
+
